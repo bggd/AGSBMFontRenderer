@@ -11,4 +11,4 @@ build_script:
   - cmake --build . --config Release
   - dir
   - dir Release
-  
+  - appveyor PushArtifact Release/AGSBMFontRenderer.dll
