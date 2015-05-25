@@ -6,8 +6,8 @@ The AGS Plugin for display UTF-8 text with Bitmap Font.
 
 - AGS 3.3.3+
 - [AngelCode's BMFont (Bitmap Font Generator)](http://www.angelcode.com/products/bmfont/)
-- UTF-8 supported text editor. **Note: AGS's text editor hasn't support UTF-8)
-- Change System Locale for English(United State?) in development. But buildEXE is not affected by system locale.
+- UTF-8 supported text editor. **(Note: AGS's text editor hasn't support UTF-8)**
+- Change System Locale to English(United State?) if your system locale isn't english. But buildEXE is not affected by system locale.
 
 ### current limitations
 
