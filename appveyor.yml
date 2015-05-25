@@ -5,5 +5,8 @@ install:
   - svn co svn://svn.code.sf.net/p/utfcpp/code/v2_0/source thirdparty/utf-8-cpp
 
 build_script:
-  - build.bat
+  - mkdir build
+  - cd build
+  - cmake .. -G "Visual Studio 9 2008"
+  - cmake --build . --config Release
 
