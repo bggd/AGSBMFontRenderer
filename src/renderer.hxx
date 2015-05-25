@@ -4,12 +4,12 @@
 #include <map>
 
 #include "../thirdparty/agsplugin.h"
-#include "../thirdparty/utf8_v2_3_4/source/utf8.h"
+#include "../thirdparty/utf8-cpp/utf8.h"
 
 #include "font.hxx"
 
 #define STB_IMAGE_IMPLEMENTATION
-#include "../thirdparty/stb_image.h"
+#include "../thirdparty/stb/stb_image.h"
 
 
 class BMFontRenderer : public IAGSFontRenderer {
@@ -171,3 +171,4 @@ class BMFontRenderer : public IAGSFontRenderer {
     void EnsureTextValidForFont(char* text, int fontNumber) {}
 
 };
+

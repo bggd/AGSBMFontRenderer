@@ -84,3 +84,4 @@ extern void bmfnt_free(struct BMFnt* bfnt);
 #endif
 
 #endif /* _BMFNT_H */
+

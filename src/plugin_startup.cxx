@@ -77,3 +77,4 @@ int AGS_EngineOnEvent(int event, int data)
 {
   return 0;
 }
+

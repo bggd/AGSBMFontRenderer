@@ -7,7 +7,7 @@
 
 #include "bmfnt.h"
 
-#include "../thirdparty/stb_image.h"
+#include "../thirdparty/stb/stb_image.h"
 
 
 struct Font {
@@ -62,3 +62,4 @@ struct Font {
     }
   }
 };
+

@@ -233,3 +233,4 @@ bmfnt_free(struct BMFnt* bfnt)
   free(bfnt);
   bfnt = NULL;
 }
+
