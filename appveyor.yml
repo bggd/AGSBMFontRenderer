@@ -4,9 +4,16 @@ install:
   - git clone --depth=1 git://github.com/nothings/stb thirdparty/stb
   - svn co svn://svn.code.sf.net/p/utfcpp/code/v2_0/source thirdparty/utf8-cpp
 
-build_script:
+before_build:
   - mkdir build
   - cd build
   - cmake .. -G "Visual Studio 9 2008"
-  - cmake --build . --config Release
+  - dir
+
+build:
+  project: AGSBMFontRenderer.sln
+
+after_build:
+  - dir
+  - dir Debug
 
