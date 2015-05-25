@@ -7,6 +7,7 @@ The AGS Plugin for display UTF-8 text with Bitmap Font.
 - AGS 3.3.3+
 - [AngelCode's BMFont (Bitmap Font Generator)](http://www.angelcode.com/products/bmfont/)
 - UTF-8 supported text editor. **Note: AGS's text editor hasn't support UTF-8)
+- Change System Locale for English(United State?) in development. But buildEXE is not affected by system locale.
 
 ### current limitations
 
@@ -33,7 +34,7 @@ AngelCode's BMFont supports select characters from UTF-8/UTF-16 text file. this 
 
 ### Download
 
-download AGSBMFontRenderer.dll from a latest successfull build's artifact.
+download AGSBMFontRenderer.dll from a latest successfull build's **artifact**.
 check [build/artifacts](https://ci.appveyor.com/project/bggd/agsbmfontrenderer/build/artifacts)
  or [history](https://ci.appveyor.com/project/bggd/agsbmfontrenderer/history).
 
@@ -50,8 +51,13 @@ add ```your_font.fnt``` and ```your_font0.tga``` to Compiled folder.
 create [New Font] from [Fonts] in AGS Editor. 
 change it propertis:
 
-- OutlineFont for self id.
-- OutlineStyle for automatic.
+- OutlineFont => self id.
+- OutlineStyle => automatic.
+
+set room events:
+
+- Enters room after fade in => room_AfterFadeIn
+- First time enters room => room_FirstLoad
 
 edit ```room1.asc``` with text editor(**Not AGS's text editor**). then save to UTF-8 **WITHOUT**-bom.
 
