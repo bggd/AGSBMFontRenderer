@@ -1,0 +1,9 @@
+clone_depth: 1
+
+install:
+  git clone --depth=1 git://github.com/nothings/stb thirdparty/stb
+  svn co svn://svn.code.sf.net/p/utfcpp/code/v2_0/source thirdparty/utf-8-cpp
+
+build_script:
+  build.bat
+
