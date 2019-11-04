@@ -1,3 +1,5 @@
+# \*This project is unmaintained\*
+
 # AGSBMFontRenderer
 
 The AGS Plugin for display UTF-8 text with Bitmap Font.
